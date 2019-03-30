@@ -43,9 +43,12 @@ dataset$Purchased <- factor(dataset$Purchased,
                            levels = c("No", "Yes"),
                            labels = c(0, 1))
 ```
+A common way is using a `factor()` function to categorize factor variables. However, it is good to note that we used `ordered = TRUE` condition only the variable has a hierarchical order.
+
 
 **Python**
 ```Python
+import numpy as np
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder_X = LabelEncoder()
 X[:, 0] = labelencoder_X.fit_transform(X[:, 0 ])
@@ -55,3 +58,5 @@ X = onehotencoder.fit_transform(X).toarray()
 labelencoder_y = LabelEncoder()
 y = labelencoder_y.fit_transform(y)
 ```
+Generally, we use `LabelEncoder` as long as the variable is ordered.
+If the variable such as Country is not ordered, we may have to use `OneHotEncoder` to construct an unordered categorical variable. This package will allow to create **dummy variables** as alternate solutions,
