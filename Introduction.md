@@ -1,7 +1,7 @@
 # Machine Learning Library for both R and Python
 A platform for Machine Learning resources of both R and Python.
 Some of the useful tips and tricks will be added in this repository.
-Note that other than Part 1 Data Preprocessing, later ML updates will be added with different files, not on this Read.md file.
+Note that other than Part 1 Data Preprocessing, later ML updates will be added on different files.
 
 ## 1. Data Preprocessing
 Before we dive into Machine Learning, it is a good idea to clean up the data and prepare the training + testing dataset. Below codes are a short introduction to Data Preprocessing before actually applying ML algorithm.
