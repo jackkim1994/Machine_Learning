@@ -16,7 +16,7 @@ dataset$Age = ifelse(is.na(dataset$Age), ave(dataset$Age, FUN = function(x) mean
 dataset$Salary = ifelse(is.na(dataset$Salary), ave(dataset$Salary, FUN = function(x) mean(x, na.rm = TRUE)),
                      dataset$Salary)
 ```
-ave() function acts like an apply() function that can utilize the function in filling the missing values.
+`ave()` function acts like an `apply()` function that can utilize the function in filling the NA's with values.
 
 
 **Python**
@@ -45,7 +45,7 @@ dataset$Purchased <- factor(dataset$Purchased,
                            levels = c("No", "Yes"),
                            labels = c(0, 1))
 ```
-A common way is using a `factor()` function to categorize factor variables. However, it is good to note that we used `ordered = TRUE` condition only the variable has a hierarchical order.
+A common way is using a `factor()` function to categorize factor variables. However, it is good to note that we used `ordered = TRUE` condition if the variable has a hierarchical order.
 
 
 **Python**
