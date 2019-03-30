@@ -1,8 +1,8 @@
 # Machine Learning Library for R & Python
 A platform for Machine Learning resources of both R and Python.
 Some of the useful tips and tricks will be added in this repository.
-Note that only Data Preprocessing will be shown in this ReadME.md.
-Other ML tips and tricks will be added and updated through different files.
+Note that only the Data Preprocessing will be shown in this ReadME.md as an preparation to tackle next chapters.
+Other ML tips and tricks will be added and updated on files and available links.
 
 
 - [Part 1: Data Preprocessing](https://github.com/jackkim1994/Machine_Learning/tree/master/Part%201%20Data%20Preprocessing)
