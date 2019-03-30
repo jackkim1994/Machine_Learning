@@ -1,7 +1,8 @@
 # Machine Learning Library for R & Python
 A platform for Machine Learning resources of both R and Python.
 Some of the useful tips and tricks will be added in this repository.
-Note that other than Part 1 Data Preprocessing, later ML updates will be added on different files.
+Note that only Data Preprocessing will be shown in this ReadME.md.
+Other ML tips and tricks will be added and updated through different files.
 
 ## 1. Data Preprocessing
 Before we dive into Machine Learning, it is a good idea to clean up the data and prepare the training + testing dataset. Below codes are a short introduction to Data Preprocessing before actually applying ML algorithm.
@@ -81,5 +82,6 @@ Note that Purchased data is made up of categorical variable TRUE/FALSE, so the s
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 ```
-`train_test_split` package from `sklearn.model_selection` is a common but one of the most important function needed to split the dataset into training and test set. This equation is required before creating ML algorithm.
+`train_test_split` package from `sklearn.model_selection` is a common but one of the most important function needed to split the dataset into training and test set. 
+This equation is required before creating ML algorithm.
 Note that similar to `set.seed()` from R, `random_state = 0` maintains the same output.
