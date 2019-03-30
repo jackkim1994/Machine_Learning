@@ -76,6 +76,7 @@ test_set = subset(dataset, split == FALSE)
 `sample.split` function helps the preparation of splitting the dataset to training and test sets.
 Note that Purchased data is made up of categorical variable TRUE/FALSE, so the split is set up as logical variable.
 
+**Python**
 ```python
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
