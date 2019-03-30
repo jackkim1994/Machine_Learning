@@ -3,6 +3,7 @@ A platform for Machine Learning resources of both R and Python.
 Some of the useful tips and tricks will be added in this repository.
 
 ## 1. Data Preprocessing
+Before we dive into Machine Learning, it is a good idea to clean up the data and prepare the training + testing dataset. Below codes are a short introduction to Data Preprocessing before actually applying ML algorithm.
 
 ### Taking Care of Missing Data
 **R**
