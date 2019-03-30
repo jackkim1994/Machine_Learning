@@ -14,6 +14,7 @@ dataset$Salary = ifelse(is.na(dataset$Salary), ave(dataset$Salary, FUN = functio
 ```
 ave() function acts like an apply() function that can utilize the function in filling the missing values.
 
+**Python**
 ```python
 import pandas as pd
 dataset = pd.read_csv('Data.csv')
