@@ -30,7 +30,7 @@ imputer = Imputer(missing_values = 'NaN', strategy = 'mean', axis = 0)
 imputer = imputer.fit(X[:, 1:3])
 X[:, 1:3] = imputer.transform(X[:, 1:3])
 ```
-**Imputer** from `sklearn.preprocessing` package allows the changing values of NA's.
+**Imputer** from `sklearn.preprocessing` package helps changing values of NA's based on the **strategy** I implemented.
 After covering missing values, it is necessary to use `fit` and `transform` function to fill up the missing values.
 
 
