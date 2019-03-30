@@ -59,4 +59,4 @@ labelencoder_y = LabelEncoder()
 y = labelencoder_y.fit_transform(y)
 ```
 Generally, we use `LabelEncoder` as long as the variable is ordered.
-If the variable such as Country is not ordered, we may have to use `OneHotEncoder` to construct an unordered categorical variable. This package will allow to create **dummy variables** as alternate solutions,
+If the variable such as Country is not ordered, we may have to use `OneHotEncoder` to construct an unordered categorical variable. This package will allow to create **dummy variables** as an alternate solution to the problem.
