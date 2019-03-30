@@ -1,4 +1,4 @@
-# Machine Learning Library for both R and Python
+# Machine Learning Library for R & Python
 A platform for Machine Learning resources of both R and Python.
 Some of the useful tips and tricks will be added in this repository.
 Note that other than Part 1 Data Preprocessing, later ML updates will be added on different files.
