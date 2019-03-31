@@ -11,6 +11,19 @@ Other ML tips and tricks will be added and updated on files and available links.
 ## 1. Data Preprocessing
 Before we dive into Machine Learning, it is a good idea to clean up the data and prepare the training + testing dataset. Below codes are a short introduction to Data Preprocessing using either R or Python.
 
+First, to check working directory,
+
+**R**
+```r
+getwd()
+```
+
+**Python**
+```python
+import os
+cwd = os.getcwd()
+```
+
 ### Taking Care of Missing Data
 **R**
 ```r
