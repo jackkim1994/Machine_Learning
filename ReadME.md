@@ -97,6 +97,10 @@ Generally, we use `LabelEncoder` as long as the variable is ordered.
 If the variable such as Country is not ordered, we may have to use `OneHotEncoder` to construct an unordered categorical variable. This package will allow to create **dummy variables** as an alternate solution to the problem.
 
 ### Splitting the dataset into the Training set and Test set
+In order to predict future outcomes and construct the predictive model, we separate the dataset to training set and test set. If the model created from the training set fits the test set well, then the model has some credibility to be used in other models. **However**, it is important to note that fitting the model well does not mean it is the most ideal one for all other dataset. Sometimes, we may have to undergo further analysis and trials and errors before we can begin using the predictive model. Even then, we may have to fix it when needed.
+
+The ideal subset for the training data and the test data is respectively **80-75%** and **20-25%**.
+
 **R**
 ```r
 install.packages('caTools')
