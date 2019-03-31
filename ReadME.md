@@ -8,11 +8,10 @@ Other ML tips and tricks will be added and updated on files and available links.
 - [Part 1: Data Preprocessing](https://github.com/jackkim1994/Machine_Learning/tree/master/Part%201%20Data%20Preprocessing)
 - Part 2: Regression
 
-## 1. Data Preprocessing
-Before we dive into Machine Learning, it is a good idea to clean up the data and prepare the training + testing dataset. Below codes are a short introduction to Data Preprocessing using either R or Python.
+## Changing Working Directory
+If necessary, changing the working directory with respect to dataset location will be needed. I have added codes for R and Python.
 
-First, to check working directory,
-
+### Check Working Directory
 **R**
 ```r
 getwd()
@@ -23,6 +22,21 @@ getwd()
 import os
 cwd = os.getcwd()
 ```
+
+### Change Working Directory
+**R**
+```r
+setwd("Working Directory")
+```
+
+```python
+import os
+os.chdir("Working Directory")
+```
+
+## 1. Data Preprocessing
+Before we dive into Machine Learning, it is a good idea to clean up the data and prepare the training + testing dataset. Below codes are a short introduction to Data Preprocessing using either R or Python.
+
 
 ### Taking Care of Missing Data
 **R**
