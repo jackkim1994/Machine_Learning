@@ -11,3 +11,6 @@ observed value of the dependent variable y and the predicted value ȳ are normal
 observed value of the dependent variable y and the predicted value ȳ are independent.
 5. Lack of multicollinearity: Multiple Linear Regression assumes that the independent variables are not highly
 correlated with each other. This assumption is tested using Variance Inflation Factor (VIF) values.
+
+## Dummy Variable Trap
+A special case in multiple linear regression such that one is adding redundant variables to the constant b. When using the dummy variable in linear regression, we will always exclude one dummy variable before constructing the linear model.
