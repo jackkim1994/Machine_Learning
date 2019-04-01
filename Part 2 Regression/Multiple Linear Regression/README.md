@@ -4,8 +4,8 @@ This is the case where we have to undergo deeper analysis than the simple linear
 and adjusted R-Squared scenarios. Depending on your significance level, your choice of variables for the analysis changes
 significantly.
 
-**R**
-## Data Preprocess
+## R
+### Data Preprocess
 ```r
 # Importing the dataset
 dataset = read.csv('50_Startups.csv')
@@ -25,7 +25,7 @@ test_set = subset(dataset, split == FALSE)
 ```
 Similar to previous linear regression, we separate the data into training set and test set.
 
-## Fitting Multiple Linear Model
+### Fitting Multiple Linear Model
 ```r
 # Fitting Multiple Linear Regression to the Training set
 regressor = lm(formula = Profit ~ .,
@@ -39,6 +39,7 @@ if we have to include it in the model. One of the methods is using **Backward El
 if it has high P-values. Sometimes, the inclusion of the variable is also determined if the adjusted R-Squared is lowered
 significantly to the point that we may have to exclude that variable from the model.
 
+### Automatic Backward Elimination
 ```r
 # Build the Optimal model using Backward Elimination
 backwardElimination <- function(x, sl) {
@@ -61,7 +62,8 @@ backwardElimination(dataset, SL)
 The above equation is an automatic model of finding the optimal model using the backward elimination. It is not always
 the method, but it is useful if one is searching for the best fit model with multiple variables.
 
-**Python**
+## Python
+### Data Preprocess
 ```python
 # Importing the libraries
 import numpy as np
@@ -90,6 +92,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 Like previous Python Tutorial, we separate into the training set and test set. Note that we removed the first column to avoid
 a Dummy Variable Trap Scenario.
 
+### Constructing the Multiple Linear Model
 ```python
 # Fitting Multiple Linear Regression to the Training set
 from sklearn.linear_model import LinearRegression
@@ -102,7 +105,7 @@ y_pred = regressor.predict(X_test)
 Similar to Simple Linear Regression, we use the same mechanism `LinearRegression()` as python console automatically treats
 it as the mutliple linear regression model.
 
-## Automatic Backward Elimination Summary
+### Automatic Backward Elimination Summary
 ```python
 # Automatic Backward Elimination
 # P-values only
