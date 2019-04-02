@@ -14,3 +14,6 @@ correlated with each other. This assumption is tested using Variance Inflation F
 
 ## Dummy Variable Trap
 A special case in multiple linear regression such that one is adding redundant variables to the constant b. When using the dummy variable in linear regression, we will always exclude one dummy variable before constructing the linear model.
+
+## Special Case: Polynomial Regression
+In a certain scenario, a linear regression may not work such that at least quadratic model may be required to fit the scatter plot. It is a good idea to check the data points and determine if we have to change the strategy of going with the linear model.
